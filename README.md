@@ -32,3 +32,10 @@
 4. make the `this` keyword in the `toggleUsersHandler` function refers to the surrounding class by binding `this`
 5. call the `toggleUsersHandler` function in the `render` method
 6. call super constructor in derived class because when you add the `constructor` to your class and you extend another class, you need to call super which calls the constructor of the `super()` class so if the class were inheriting from (`Component`)
+
+## 3. The Component Lifecycle (Class-based Components Only!)
+
+1. add the `UserFinder.js` component
+2. get rid of the `DUMMY_USERS` & refer to `this.props.users` instead of it in `Users.js`
+3. output the `<UserFinder>` component instead of the `<Users>` component in `App.js`
+4. add the `UserFinder.module.css` file
