@@ -39,3 +39,10 @@
 2. get rid of the `DUMMY_USERS` & refer to `this.props.users` instead of it in `Users.js`
 3. output the `<UserFinder>` component instead of the `<Users>` component in `App.js`
 4. add the `UserFinder.module.css` file
+
+## 4. Lifecycle Methods In Action
+
+1. convert the `UserFinder.js` component into a class-based component
+2. use the `componentDidUpdate()` lifecycle to handle side effects and replace `useEffect()`
+3. use `componentDidMount()` to simulate a case where the data comes from an http request
+4. use `componentWillUnmount()` in `User.js`
