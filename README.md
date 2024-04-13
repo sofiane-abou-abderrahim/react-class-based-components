@@ -46,3 +46,10 @@
 2. use the `componentDidUpdate()` lifecycle to handle side effects and replace `useEffect()`
 3. use `componentDidMount()` to simulate a case where the data comes from an http request
 4. use `componentWillUnmount()` in `User.js`
+
+## 5. Class-based Components & Context
+
+1. add a new `users-context.js`
+2. use context with the first approach: the context `Consumer` component by adding `<UsersContext.Consumer>` in `UserFinder.js`
+3. or use `static contextType` in `UserFinder.js`
+4. now access the context with `this.context.users` instead of `DUMMY_USERS`
