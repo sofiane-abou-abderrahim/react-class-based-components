@@ -53,3 +53,14 @@
 2. use context with the first approach: the context `Consumer` component by adding `<UsersContext.Consumer>` in `UserFinder.js`
 3. or use `static contextType` in `UserFinder.js`
 4. now access the context with `this.context.users` instead of `DUMMY_USERS`
+
+## 6. Introducing Error Boundaries
+
+1. simulate a server error by throwing an error in the `componentDidUpdate` lifecycle method in `Users.js`
+2. use `try` / `catch` to prevent the app from crashing
+3. if you throw an error in a component and want to handle it in a parent component, build an error boundary
+4. add a `ErrorBoundary.js` file
+5. build a class-based component named `ErrorBoundary`
+6. use the `componentDidCatch()` lifecycle method which is going to be triggered whenever a child component throws an error
+7. in `UserFinder.js`, wrap the `<ErrorBoundary>` component around the `<Users>` component
+8. cacth the error with `componentDidCatch()`
